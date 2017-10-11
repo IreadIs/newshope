@@ -1,0 +1,73 @@
+<!--pages/newcustomer/newcustomer.wxml-->
+<view class="container">
+  <view class="bguser">
+    <view class="userbg">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/newcustomer.png"></image>
+    </view>
+    <view class="userword">
+      <text class="txt2">开发新客户</text>
+      <text class="txt3">让关注用户变成实际购买我们产品或服务的客户,你要做的就是和<text style="color:orange">成交概率</text>高的客户交流,另外系统自动会推送信息给用户，你可以和浏览过信息的用户以及有<text style="color:orange">关键动作</text>的用户沟通。</text>
+    </view>
+  </view>
+  <view class="zhuanhua">
+    <view class="zh">
+      <text style="font-size:40rpx;color:#67b8e1;">3</text>
+      <text style="font-size:28rpx;">已转化人数</text>
+    </view>
+    <view class="zh">
+      <text style="font-size:40rpx;color:#67b8e1;">250‰</text>
+      <text style="font-size:28rpx;">转化率</text>
+    </view>
+  </view>
+  <view class="classname">
+    <navigator url="../Turnoverrate/Turnoverrate">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/quxian.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">按成交概率</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../region/region">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/weizhi.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">按地域</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../Pusheffect/Pusheffect">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/zhexian.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">按推送效果</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../cuxiao/cuxiao">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/mail.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">官方促销活动</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../earlywarn/earlywarn">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/ling.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">客户预警</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../tostore/tostore">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/dianzi.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">到店客户</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+

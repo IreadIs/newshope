@@ -1,0 +1,49 @@
+/* pages/sign/sign.wxss */
+@import "../qrcode/qrcode.wxss";
+.workbg{position:fixed;z-index:10;height:288rpx;padding: 20rpx;box-sizing: border-box;padding-bottom:0rpx;}
+.swiper-tab-list{width:25%;}
+.signuser{width:100%;display: flex;flex-direction: row;}
+.signimg{width:160rpx;height:160rpx;border-radius:50%;}
+.signname{display: flex;flex-direction: column;flex:1;padding:30rpx 0rpx 0rpx 20rpx;}
+.signgold{width:200rpx;border: 2rpx solid #ffd706;height:40rpx;display: flex;flex-direction: row;border-radius:30rpx;overflow:hidden;line-height:36rpx;font-size:28rpx;color:#fff;}
+.signimg1{width:40rpx;height:40rpx;}
+.addsign{background:#fff;border-radius:10rpx;width:160rpx;display: flex;flex-direction: row;font-size:24rpx;color:rgba(255,45,0,0.7);height:70rpx;line-height:70rpx;margin-top:50rpx;padding-left:15rpx;}
+.signimg3{width:40rpx;height:40rpx;padding-top:10rpx;}
+.swiper-tab{line-height: 108rpx}
+.worknavclass{width:100%;display:flex}
+.rules{margin-top:290rpx;width:100%;background:#f3fbff;color:#4e829d;display: flex;padding:20rpx 40rpx;flex-direction:column;}
+.rules text{font-size:28rpx;}
+.bgc{width:100%;background:#efeff4;height:25rpx;}
+.articale{width:100%;display: flex;flex-direction: column;padding:0rpx 20rpx;box-sizing: border-box;}
+.signmore{width:100%;display: flex;flex-direction: row;padding:20rpx 0rpx;border-bottom:1px solid #ccc;}
+.signlist{width:100%;display: flex;flex-direction: row;padding:20rpx 0rpx;border-bottom:2rpx solid #ccc}
+.signlist image{width:80rpx;height:80rpx;}
+.signtitle{flex:1;display: flex;flex-direction: column;padding-left:20rpx;}
+.txt1{font-size:30rpx;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:480rpx;}
+.txt2{font-size:24rpx;color:#f9b352;}
+.txt3{font-size:24rpx;background:#4cd964;color:#fff;height:40rpx;padding:5rpx 10rpx;border-radius:10rpx;line-height:40rpx;margin-top:20rpx;}
+.suggest{width:100%;display: flex;margin-top:300rpx;flex-direction: column;padding:20rpx 40rpx;box-sizing:border-box;}
+textarea{border:2rpx solid #ccc;margin:0 auto;margin-bottom:20rpx;padding:10rpx 20rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

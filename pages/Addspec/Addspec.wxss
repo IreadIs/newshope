@@ -1,0 +1,2 @@
+/* pages/Addspec/Addspec.wxss */
+@import "../editproduct/editproduct.wxss";

@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "行为分析",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,173 @@
+<!--pages/members/members.wxml-->
+<view class="container">
+  <view class="bguser">
+    <view class="userbg">
+      <image src="{{list.headimgurl}}"></image>
+    </view>
+    <view class="userword">
+      <text class="txt2">{{list.linkman}}</text>
+      <text class="txt3">推荐人：无</text>
+    </view>
+  </view>
+  <view class="bgbck"></view>
+  <view class="membersclass">
+    <view class="sharenum">
+      <text>{{list.shares}}</text>
+      <text>分享次数</text>
+    </view>
+    <view class="sharenum">
+      <text>{{list.visitor}}</text>
+      <text>带来访问</text>
+    </view>
+    <view class="sharenum">
+      <text>{{list.credits}}</text>
+      <text>累计金币</text>
+    </view>
+  </view>
+  <view class="radiusarea">
+    <text bindtap="goodfriends">好友</text>
+    <text bindtap="lable">标签</text>
+    <text bindtap="share">分享</text>
+    <text bindtap="order">订单</text>
+    <text bindtap="push">推送</text>
+    <text bindtap="analysisi">行为</text>
+  </view>
+  <view class="bgbck"></view>
+  <view class="memberform">
+    <view class="relaname">
+     <text>真实姓名</text>
+     <input  type="text" placeholder="真实姓名" value="{{list.username}}"/>
+     <text class="refresh">更新</text>
+    </view>
+    <view class="relaname">
+     <text>公司名称</text>
+     <input  type="text" placeholder="公司名称" value="{{list.company}}"/>
+     <text class="refresh">更新</text>
+    </view>
+    <view class="relaname">
+     <text>手机号</text>
+     <input type="text" placeholder="手机号" value="{{list.mobile}}"/>
+     <text class="refresh">更新</text>
+    </view>
+    <view class="relaname">
+      <text>地区</text>
+      <text class="china">{{list.country}}</text>
+    </view>
+    <view class="relaname">
+      <text>性别</text>
+      <text class="china">{{xingbie}}</text>
+    </view>
+    <view class="relaname">
+      <text>推荐人</text>
+      <text class="china">{{list.uploadname}}</text>
+    </view>
+    <view class="relaname">
+      <text>专属客服</text>
+      <text class="china">YOUNG</text>
+    </view>
+    <view class="relaname">
+      <text>关注时间</text>
+      <text class="china">{{list.dateline}}</text>
+    </view>
+    <view class="relaname">
+      <text>在线时长</text>
+      <text class="china">{{list.totaltime}}s</text>
+    </view>
+    <view class="relaname">
+      <text>分享次数</text>
+      <text class="china">{{list.shares}}</text>
+    </view>
+    <view class="relaname">
+      <text>分享带来访问</text>
+      <text class="china">{{list.visitor}}</text>
+    </view>
+    <view class="relaname">
+      <text>分享带来关注</text>
+      <text class="china">{{list.subscribes}}</text>
+    </view>
+    <view class="relaname">
+      <text>最后互动时间</text>
+      <text class="china">{{list.lastactivity}}</text>
+    </view>
+    <view class="relaname">
+      <text>最后访问时间</text>
+      <text class="china">{{list.lastvisit}}</text>
+    </view>
+  </view>
+  <view class="bgbck"></view>
+  <view class="Record">
+    <text style="color:#000;font-size:34rpx;">维护</text>
+    <view class="records">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bianji.png"></image>
+      <text style="color:#007aff;font-size:34rpx;">记录</text>
+    </view>
+  </view>
+  <view class="recordlist">
+      <block wx:for-item="weihuitem" wx:for="{{weihu}}">
+        <view class="recordevery">
+          <image src="{{weihuitem.avatar}}"></image>
+          <view class="recordintr">
+            <text>{{weihuitem.username}}</text>
+            <text>{{weihuitem.message}}</text>
+            <text>{{weihuitem.dateline}}</text>
+          </view>
+          <view class="Fabulous">
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/dianzanx.png"></image>
+            <text>{{weihuitem.dig}}</text>
+          </view>
+        </view>
+      </block>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

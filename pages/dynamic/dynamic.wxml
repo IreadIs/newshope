@@ -1,0 +1,36 @@
+<!--pages/dynamic/dynamic.wxml-->
+<view class="container">
+  <view class="H-portrait" style="background:url({{userInfo.avatar}}) center center no-repeat; filter: blur(15px);"></view>
+  <view class="dyuserbg">
+    <view class="dyuserphoto">
+        <image src="{{userInfo.avatar}}"></image>
+    </view>
+    <text>{{userInfo.linkman}}</text>
+  </view>
+    <view class="edit">
+      <image  bindtap="Edithide" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/edrit.png"></image>
+    </view>
+  <block wx:if="{{list==0}}">
+    <text>这个人很懒什么也没有留下.....</text>
+  </block>
+  <block wx:else>
+    <block wx:for-item="listitem" wx:for="{{list}}">
+      <view class="dycontent">
+        <image src="{{userInfo.avatar}}" class="dycimg"></image>
+        <view class="dyname">
+          <text class="dyusername">{{userInfo.linkman}}</text>
+          <text class="dywords">{{listitem.content}}</text>
+          <view class="dyusertu">
+            <block wx:for-item="listphoto" wx:for="{{listitem.photoarr}}">
+              <image src="{{listphoto}}"></image>
+            </block>
+          </view>
+          <view class="usertime">
+            <text style="color:#8e8e93;">{{listitem.dateline}}</text>
+            <text style="color:#007aff;font-weight:bold;padding-left:20rpx;" bindtap="deletes" data-id="{{listitem.id}}">删除</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>

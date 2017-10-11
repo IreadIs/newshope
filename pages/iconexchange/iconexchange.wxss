@@ -1,0 +1,39 @@
+/* pages/iconexchange/iconexchange.wxss */
+.iconkefu{display:flex;width:100%;background:url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bannerbg.png) no-repeat;height:260rpx;flex-direction:column;}
+.iconkefu image{width:60rpx;height:60rpx;border-radius:50%;}
+.kefu{position:fixed;right:20rpx;top:20rpx;color:#fff;display: flex;flex-direction: row;}
+.iconhead{display: flex;flex:1;flex-direction: row;padding:40rpx;box-sizing:border-box;}
+.iconhead image{width:160rpx;height:160rpx;border-radius:50%;}
+.signname{display: flex;flex-direction: column;flex:1;padding:30rpx 0rpx 0rpx 20rpx;}
+.signgold{width:200rpx;border: 2rpx solid #ffd706;height:40rpx;display: flex;flex-direction: row;border-radius:30rpx;overflow:hidden;line-height:36rpx;font-size:28rpx;color:#fff;}
+.iconhead .signimg1{width:40rpx;height:40rpx;}
+.bgc{width:100%;background:#ebebeb;height:25rpx;}
+.moneyshu{width:100%;display: flex;flex-direction: column;}
+.input{line-height:45rpx;border-bottom:2rpx solid #ccc;padding:20rpx 10rpx;display: flex;flex-direction: row;}
+input{flex:1;font-size:28rpx;font-weight: bold;}
+.slid{width:100%;text-align:center;}
+.duihuan{color:#fff;width:445rpx;text-align:center;background:#ccc;padding:10rpx 0rpx;border-radius:10rpx;margin-top:20rpx;}
+.duihuan2{color:#fff;width:445rpx;text-align:center;background:green;padding:10rpx 0rpx;border-radius:10rpx;margin-top:20rpx;}
+.rules{width:100%;padding:20rpx 40rpx;box-sizing:border-box;display: flex;flex-direction: column;}
+.rules text{font-size:28rpx;color:#999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

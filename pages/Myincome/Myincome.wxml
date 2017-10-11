@@ -1,0 +1,17 @@
+<!--pages/Myincome/Myincome.wxml-->
+<view class="container">
+      <view class="bgc"></view>
+      <view class="incomelist">
+            <view class="noincome">
+                <text style="font-size:24rpx;color:#c8c7cc;">未提现金额</text>
+                <text style="padding-right:20rpx;font-size:24rpx;color:#c8c7cc;flex:1;text-align:right;">￥-2,890.17</text>
+                <image style="padding-top:24rpx;width:40rpx;height:40rpx;" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/aqj.png"></image>
+            </view>
+            <view class="line"></view>
+            <view class="noincome">
+                <text style="font-size:24rpx;color:#c8c7cc;">已提现金额</text>
+                <text style="padding-right:20rpx;font-size:24rpx;color:#c8c7cc;flex:1;text-align:right;">￥0.00</text>
+                <image style="padding-top:24rpx;width:40rpx;height:40rpx;" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/aqj.png"></image>
+            </view>
+      </view>
+</view>

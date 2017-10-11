@@ -1,0 +1,56 @@
+/* pages/Orderman/Orderman.wxss */
+.nav{width:100%;height:100rpx;display:flex;flex-direction:row;background:#fff;position:fixed;top:0;}
+.default{padding:20rpx 0;display:flex;flex-direction: column;text-align:center;flex:1;color:#000;font-weight:bold;font-size:28rpx;line-height:65rpx;}
+.default:nth-child(3){border-right:none;}
+.red:nth-child(3){border-right:none;}
+.red{padding:20rpx 0;display:flex;flex-direction: column;text-align:center;color:#ff3b30;flex:1;font-weight:bold;font-size:28rpx;line-height:65rpx;border-bottom:2px solid #ff3b30;}
+.show{width:100%;display:block;box-sizing:border-box;padding-top:100rpx;}
+.show image{width:200rpx;height:200rpx;display:block;}
+.hidden{display:none;text-align:center;line-height:200px;}
+.Shiplist{width:100%;display: flex;flex-direction: column;padding:10rpx 0rpx;box-sizing:border-box;}
+.shiptables{width:100%;display: flex;flex-direction: column;}
+.listtop{width:100%;display: flex;flex-direction:row;background:#fff;padding:10rpx 20rpx;box-sizing:border-box;line-height:44rpx;}
+.danhao{display: flex;flex-direction: column;}
+.danhao text{font-size:28rpx;color:#6d6d72;}
+.zhifu{font-size:28rpx;color:#ff3b30;flex:1;text-align:center;}
+.listbottom{padding:10rpx 20rpx;box-sizing:border-box;width:100%;display: flex;flex-direction: row;background:#efeff4;}
+.listbottom image{width:160rpx;height:160rpx;}
+.listbottom text{font-size:26rpx;color:#8e8e93;padding-left:20rpx;flex:1;line-height:160rpx;}
+.bgc{width:100%;background:#efeff4;height:25rpx;border-bottom:2rpx solid #fff;border-top:2rpx solid #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

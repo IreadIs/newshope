@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "分享我的二维码",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

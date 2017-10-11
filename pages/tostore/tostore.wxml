@@ -1,0 +1,65 @@
+<!--pages/tostore/tostore.wxml-->
+<view class="container">
+    <view class="workbg">
+      <text class="mine">开发新客户-推送效果</text>
+      <view class="worknavclass">
+        <view class="swiper-tab">  
+          <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+          到店客户
+          </view>  
+          <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="coverworks">
+            到店二维码
+          </view>
+          <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="sendmessage">
+            发消息
+          </view>
+        </view>  
+      </view>
+    </view>
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight *2}}rpx" bindchange="bindChange">  
+        <swiper-item> 
+          <view class="containers" style="width:100%;">
+            <block wx:if="{{list.length==0}}"><text style="font-size:28rpx;padding:20rpx 40rpx;box-sizing:border-box;">暂无数据</text></block>
+            <block wx:else>
+              <block wx:for-item="listitem" wx:for="{{list}}">
+                <navigator url="../members/members?uid={{listitem.uid}}">
+                  <view class="item">
+                    <image class="img" src="{{listitem.avatar}}"></image>
+                    <view class="text">
+                      <text class="title">{{listitem.linkman}}</text>
+                      <text class="description">到店时间:{{listitem.dateline}}</text>
+                    </view>
+                    <view class="golds">
+                      <text class="jinzi">快捷回复</text>
+                    </view>
+                  </view>
+                </navigator>
+              </block>
+            </block>
+          </view>
+        </swiper-item>  
+        <swiper-item>  
+          <view class="qrcode">
+            <text style="font-size:28rpx;">用户到店，扫描二维码，系统推送消息到销售微信，销售可以直接联系客户。</text>
+            <image src="{{lists.data}}"></image>
+            <text style="font-size:28rpx;color:orange;text-align:center;">总平台到店二维码</text>
+          </view>
+        </swiper-item>  
+        <swiper-item>
+          <view class="Choice">
+              <text style="font-size:28rpx;">请选择发送范围</text>
+              <view class="icon">
+                <view class="today">
+                    <radio-group class="radio-group" bindchange="radioChange">
+                      <label class="radio" wx:for="{{items}}">
+                        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                      </label>
+                    </radio-group>
+                </view>
+              </view>
+              <textarea placeholder="消息内容,必填" placeholder-style="font-size:28rpx;" maxlength="-1" bindinput="binadarea"/>
+              <text class="submit" bindtap="submits">提交</text>
+          </view>
+        </swiper-item>
+    </swiper> 
+  </view>

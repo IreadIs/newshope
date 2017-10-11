@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "动态",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

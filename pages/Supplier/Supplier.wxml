@@ -1,0 +1,54 @@
+<!--pages/Supplier/Supplier.wxml-->
+<view class="container">
+    <view class="supbg">
+        <image src="{{userInfo.avatar}}"></image>
+        <view class="supname">
+            <text style="font-size:34rpx;color:#fff;">{{userInfo.linkman}}</text>
+            <text style="font-size:28rpx;color:#fff;">金币:{{userInfo.credit}}</text>
+        </view>
+    </view>
+    <view class="supclass">
+        <view class="supone">
+            <text style="font-size:30rpx;">昨日</text>
+            <text style="font-size:30rpx;color:#6d6d72;">￥0.00</text>
+        </view>
+        <view class="supone">
+            <text style="font-size:30rpx;">昨日</text>
+            <text style="font-size:30rpx;color:#6d6d72;">￥0.00</text>
+            </view>
+        <view class="supone" style="border:none;line-height:80rpx;">
+            <text style="font-size:30rpx;">订单</text>
+        </view>
+    </view>
+    <view class="bgc"></view>
+    <view class="suplist">
+        <navigator url="../adminmanger/adminmanger" hover-class="none">
+            <view class="suplistitem">
+                <image class="supimg1" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icont1.png"></image>
+                <view class="supgl">商品管理</view>
+                <image class="supimg2" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/aqj.png"></image>
+            </view>
+        </navigator>
+        <navigator url="../adddiscount/adddiscount" hover-class="none">
+          <view class="suplistitem">
+              <image class="supimg1" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icont2.png"></image>
+              <view class="supgl">限时折扣</view>
+              <image class="supimg2" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/aqj.png"></image>
+          </view>
+        </navigator>
+        <navigator url="../Orderman/Orderman" hover-class="none">
+          <view class="suplistitem">
+              <image class="supimg1" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icont2.png"></image>
+              <view class="supgl">订单管理</view>
+              <image class="supimg2" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/aqj.png"></image>
+          </view>
+        </navigator>
+        <navigator url="../Myincome/Myincome" hover-class="none">
+          <view class="suplistitem">
+              <image class="supimg1" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icont3.png"></image>
+              <view class="supgl">我的收入</view>
+              <image class="supimg2" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/aqj.png"></image>
+          </view>
+        </navigator>
+    </view>
+</view>

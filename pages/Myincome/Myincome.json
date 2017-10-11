@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "我的收入",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

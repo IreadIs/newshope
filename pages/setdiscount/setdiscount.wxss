@@ -1,0 +1,48 @@
+/* pages/setdiscount/setdiscount.wxss */
+.discounthead{border-top:2rpx solid #ccc;border-bottom:2rpx solid #ccc;width:100%;display:flex;flex-direction:row;padding:20rpx 20rpx;box-sizing:border-box;}
+.distitle{flex:1;display:flex;flex-direction:column;padding-left:20rpx;}
+.discounthead image{width:88rpx;height:88rpx;}
+.bgc{width:100%;background:#efeff4;height:25rpx;}
+.dissetlist{width:100%;display: flex;flex-direction: column;padding:10rpx 20rpx;box-sizing: border-box;}
+.disprice{border-bottom:2rpx solid #ccc;width:100%;display: flex;flex-direction: row;height:86rpx;line-height:86rpx;}
+.disprice input{padding-top:16rpx;padding-left:20rpx;}
+picker{font-size:28rpx;padding-left:24rpx;}
+switch{padding-left:20rpx;}
+.dissetlist .show{display:flex;border-bottom:2rpx solid #ccc;width:100%;flex-direction: row;height:86rpx;line-height:86rpx;}
+.dissetlist .hiden{border-bottom:2rpx solid #ccc;width:100%;display: none;flex-direction: row;height:86rpx;line-height:86rpx;}
+.disbtn{width:100%;display: flex;flex-direction: row;text-align:center;padding:10rpx 20rpx;box-sizing:border-box;}
+.discancle{border-radius:10rpx;background:#ff3b30;color:#fff;width:48%;height:88rpx;line-height:88rpx;margin-right:2%;font-size:34rpx;}
+.dissuer{border-radius:10rpx;background:#4cd964;color:#fff;width:48%;height:88rpx;line-height:88rpx;margin-left:2%;font-size:34rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

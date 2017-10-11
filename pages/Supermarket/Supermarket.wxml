@@ -1,0 +1,46 @@
+<!--pages/Supermarket/Supermarket.wxml-->
+<view class="container">
+  <view class="iconone">
+        <text>我的金币</text>
+        <text class="blue">{{userInfo.credit}}</text>
+        <view class="shadowimg">
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/shadow.png"></image>
+        </view>
+  </view>
+  <view class="tips">
+      <text class="wentips" style="font-size:28rpx;">温馨提示</text>
+      <view class="tipscon">1.自即日起，企业Plus个人金币可累计换购使用。</view>
+      <view class="tipscon">2.金币最终解释权归企业Plus所有。</view>
+  </view>
+  <view class="graintr">
+      <navigator url="../integral/integral" hover-class="none">
+          <view class="mingxi">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jifen.png"></image>
+              <text style="font-size:28rpx;color:#007aff;font-weight:bold;">积分明细</text>
+          </view>
+      </navigator>
+      <view class="blank"></view>
+      <navigator url="../intricon/intricon" hover-class="nones">
+          <view class="shuoming">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jifen.png"></image>
+              <text style="font-size:28rpx;color:#007aff;font-weight:bold;">积分说明</text>
+          </view>
+      </navigator>
+  </view>
+  <view class="exchange">
+      <view class="line"></view>
+      <text class="ecgoods" style="color:#ff9500;">换购商品</text>
+      <view class="line"></view>
+  </view>
+  <view class="superlist">
+      <view class="marketlist">
+          <block wx:for-item="superitem" wx:for="{{list}}">
+            <view class="listcon">
+                <image src="{{superitem.photo}}" style="width:100%;"></image>
+                <text class="super1">{{superitem.title}}</text>
+                <text class="super2">{{superitem.credits}}金币</text>
+            </view>
+          </block>
+      </view>
+  </view>
+</view>

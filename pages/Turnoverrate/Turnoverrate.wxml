@@ -1,0 +1,32 @@
+<!--pages/Turnoverrate/Turnoverrate.wxml-->
+<view class="container">
+  <view class="bannerbg">
+    <view class="bgc"></view>
+    <view class="goodfriend">
+      <text>开发新客户</text>
+      <text>-按成交概率</text>
+    </view>
+  </view>
+  <!--搜索-->
+  <view class="serch">
+    <view class="serchborder">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+      <input type="text" placeholder="搜索...." placeholder-style="font-size:28rpx;color:#999;" bindinput="bindInput"/>
+      <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+    </view>
+    <view>{{output}}</view>
+  </view>
+  <view class="containers" style="width:100%;">
+    <view class="item" wx:for-item="listitem" wx:for="{{list}}">
+        <image class="img" src="{{listitem.avatar}}"></image>
+        <view class="text">
+          <text class="title">{{listitem.linkman}}</text>
+          <text class="description">推荐人:{{listitem.uploadname}}</text>
+        </view>
+          <progress percent="{{listitem.percent}}" stroke-width="20" show-info activeColor="#43d2ea" />
+        <view class="golds">
+          <text class="jinzi">联系</text>
+        </view>
+      </view>
+  </view>
+</view>

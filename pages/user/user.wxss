@@ -1,0 +1,42 @@
+/* pages/user/user.wxss */
+.wxphoto{padding:0rpx 40rpx;box-sizing:border-box;width:100%;display:flex;flex-direction:row;height:180rpx;line-height:180rpx;border-bottom:1px solid #ccc;font-size:34rpx;color:#6d6d72;}
+.wxphoto image{width:120rpx;height:120rpx;vertical-align:middle;padding:30rpx 0rpx;}
+.wxphoto text{padding-left:20rpx;box-sizing: border-box;}
+.xname{box-sizing:border-box;padding:0rpx 40rpx;width:100%;display:flex;flex-direction:row;border-bottom:1px solid #ccc;height:86rpx;line-height:86rpx;font-size:34rpx;color:#6d6d72;}
+.xname input{flex:1;height:86rpx;line-height:86rpx;box-sizing:border-box;padding:0rpx 40rpx;}
+picker{flex:1;padding-left:40rpx;box-sizing: border-box;}
+.btnXiugai {display: block;width: 660rpx;height: 70rpx;line-height: 70rpx;background: #ff9f38;color: white;font-size: 30rpx;text-align: center;border-radius: 6rpx;position: fixed;bottom: 50rpx;left: 50%;margin-left: -330rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!--pages/pubdynamics/pubdynamics.wxml-->
+<view class="container">
+  <textarea placeholder="说点什么吧..."maxlength='-1' bindblur="dynavalue"/>
+  <view class="upload">
+  <block wx:if="{{tempFilePaths ==false}}">
+    <view></view>
+  </block>
+  <block wx:else>
+    <block wx:for-item="listimg" wx:for="{{tempFilePaths}}">
+      <image src="{{listimg}}" class="showimg"></image>
+    </block>
+  </block>
+    <view class="uploadborder" bindtap="uploadimg">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/dyphoto.png"></image>
+      <view class="uploadnum">
+        <text>{{templength}}</text>
+        <text>/</text>
+        <text>9</text>
+      </view>
+    </view>
+  </view>
+  <view class="subbtn">
+    <text class="fan">返回</text>
+    <text class="tjiao" bindtap="submitcont">提交</text>
+  </view>
+</view>
+<image src="{{urlimg}}"></image>

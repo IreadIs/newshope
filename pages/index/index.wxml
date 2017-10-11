@@ -1,0 +1,108 @@
+<!--index.wxml-->
+<view class="container">
+ <view class="userinfos">
+  <!--金币玩法-->
+  <view class="goldicon">
+    <view class="goldcoins"></view>
+    <view class="Customer-service">
+      <image src="{{userinfos.avatarUrl}}"></image>
+      <text style="padding-left:10rpx;line-height:50rpx;">专属客服</text>
+    </view>
+  </view>
+  <!--用户信息-->
+  <view class="userinfo">
+    <view class="username">
+      <image src="{{userinfos.avatarUrl}}"></image>
+      <text>{{userinfos.nickName}}</text>
+    </view>
+    <view class="usericon">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jbs_icon.png"></image>
+      <text style="padding-left:20rpx;">{{userInfo.credit}}</text>
+    </view>
+  </view>
+ </view>
+ <!--分类导航-->
+ <view class="activeclass">
+    <navigator url="../sign/sign" class="goldshop" hover-class="none">
+        <view class="goldimg">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/codes.png"></image>
+        </view>
+        <text>赚金币</text>
+    </navigator>
+    <navigator url="../Invitation/Invitation" class="goldshop">
+        <view class="goldimg">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/fausers.png"></image>
+        </view>
+        <text>我的邀请</text>
+    </navigator>
+    <navigator url="../Supermarket/Supermarket" class="goldshop">
+        <view class="goldimg goldbackground">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/goldshop.png"></image>
+        </view>
+        <text>金币商城</text>
+    </navigator>
+    <navigator url="../iconexchange/iconexchange" class="goldshop">
+        <view class="goldimg goldbackground1">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/duixian.png"></image>
+        </view>
+        <text>金币兑现</text>
+    </navigator>
+ </view>
+ <view class="bgc"></view>
+ <!--服务-->
+ <view class="service">
+  <text class="txt1">服务</text>
+  <view class="serviceclass">
+    <navigator url="../service/service" hover-class="none">
+      <view class="sercenter">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/sercenter.png"></image>
+        <text>工作台</text>
+      </view>
+    </navigator>
+    <navigator url="../Minorder/Minorder">
+      <view class="sercenter">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/minorder.png"></image>
+        <text>订单</text>
+      </view>
+    </navigator>
+    <navigator url="../Supplier/Supplier">
+      <view class="sercenter">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/gongys.png"></image>
+        <text>供应商</text>
+      </view>
+    </navigator>
+    <navigator url="../Complaint/Complaint">
+      <view class="sercenter">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/ws.png"></image>
+        <text>投诉/建议</text>
+      </view>
+    </navigator>
+    <view class="sercenter">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/ql.png"></image>
+      <text>我的群</text>
+    </view>
+    <navigator url="../myshare/myshare">
+      <view class="sercenter">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/sharew.png"></image>
+        <text>我的分享</text>
+      </view>
+    </navigator>
+    <navigator url="../Mycollection/Mycollection">
+      <view class="sercenter">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/myshou.png"></image>
+        <text>我的收藏</text>
+      </view>
+    </navigator>
+    <navigator url="../Mycard/Mycard">
+        <view class="sercenter">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/myka.png"></image>
+        <text>我的卡券</text>
+        </view>
+    </navigator>
+    <view class="sercenter">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/shoppuw.png"></image>
+      <text>我的微店</text>
+    </view>
+  </view>
+ </view>
+</view>

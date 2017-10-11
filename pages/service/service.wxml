@@ -1,0 +1,39 @@
+<!--pages/service/service.wxml-->
+<view class="container1">
+  <navigator url="../newuser/newuser">
+    <view class="newuser">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/newuser.png"></image>
+      <text>获取新用户</text>
+    </view>
+  </navigator>
+  <navigator url="../newcustomer/newcustomer">
+    <view class="newuser newuser1">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/newcustomer.png"></image>
+      <text>开发新客户</text>
+    </view>
+  </navigator>
+  <navigator url="../oldcustomerlist/oldcustomerlist">
+    <view class="newuser newuser1">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/oldcustomer.png"></image>
+      <text>服务老客户</text>
+    </view>
+  </navigator>
+  <!--
+    <view class="newuser">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/admin.png"></image>
+      <text>管理</text>
+    </view>
+  -->
+  <navigator url="../index/index">
+    <view class="newuser newuser">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/vip.png"></image>
+      <text>个人中心</text>
+    </view>
+  </navigator>
+  <navigator url="../mylist/mylist">
+    <view class="newuser">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/mylist.png"></image>
+      <text>我的</text>
+    </view>
+  </navigator>
+</view>

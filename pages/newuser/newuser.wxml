@@ -1,0 +1,85 @@
+<!--pages/newuser/newuser.wxml-->
+<view class="container">
+  <view class="bguser">
+    <view class="userbg">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/newuser.png"></image>
+    </view>
+    <view class="userword">
+      <text class="txt2">获取新用户</text>
+      <text class="txt3">获取新用户就是让更多的人关注企业Plus,所有你发展的人,<text style="color:orange">包括你朋友帮你发展的,都将是你的客户</text></text>
+    </view>
+  </view>
+  <view class="classname">
+    <navigator url="../qrcode/qrcode" hover-class="none">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-qrcode1.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">分享我的二维码</text>
+          <view class="goldperson">
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jinzi.png"></image>
+            <text style="font-size:24rpx;"><text style="color:#1c90fe">50</text>/人</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../sharearticle/sharearticle">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-share1.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">分享文章</text>
+          <view class="goldperson">
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jinzi.png"></image>
+            <text style="font-size:24rpx;"><text style="color:#1c90fe;">50</text>/人</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../shareproduct/shareproduct">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-holidayact1.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">分享产品</text>
+          <view class="goldperson">
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jinzi.png"></image>
+            <text style="font-size:24rpx;"><text style="color:#1c90fe;">50</text>/人</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../shareproductguang/shareproductguang">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-operator1.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">分享官方推广</text>
+          <view class="goldperson">
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jinzi.png"></image>
+            <text style="font-size:24rpx;"><text style="color:#1c90fe;">50</text>/人</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../Grabcust/Grabcust">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-pool1.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">抢客户 </text>
+          <view class="goldperson">
+            <text style="font-size:24rpx;">可抢<text style="color:#1c90fe;">5</text>人</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../productguang/productguang">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-holidayact1.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">创建我的推广</text>
+          <view class="goldperson">
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jinzi.png"></image>
+            <text style="font-size:24rpx;"><text style="color:#1c90fe;">50</text>/人</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

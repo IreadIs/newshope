@@ -1,0 +1,60 @@
+/* pages/myorder/myorder.wxss */
+page{font-family: "微软雅黑";background:#efeff4;}
+.body{padding-bottom:100rpx;}
+.nav{width:100%;height:100rpx;display:flex;flex-direction:row;background:#fff;position:fixed;top:0;}
+.default{
+    padding:20rpx 0;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    flex:1;
+    color:#000;
+    font-weight:bold;
+    font-size:28rpx;
+    line-height:65rpx;
+    }
+    .default:nth-child(3){border-right:none;}
+     .red:nth-child(3){border-right:none;}
+.red{
+    padding:20rpx 0;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    color:#ff3b30;
+    flex:1;
+    font-weight:bold;
+    font-size:28rpx;
+    line-height:65rpx;
+    border-bottom:2px solid #ff3b30;
+    }
+.show{
+    display:block;
+    text-align:center;
+    box-sizing:border-box;padding-top:100rpx;
+    }
+.show image{width:200rpx;height:200rpx;display:block;}
+.hidden{
+    display:none;
+    text-align:center;
+    line-height:200px;
+    }
+.product{width: 100%;display: flex;flex-direction: column;background:#fff;margin-bottom:20rpx;}
+.payment{width:100%;display: flex;flex-direction: row;border-bottom:1px solid #ccc;padding:20rpx;box-sizing:border-box;}
+.zhuangnum{display: flex;flex-direction: column;flex:1;font-size:14px;}
+.zhuangtai{display: flex;flex-direction: row;}
+.zongjia{display: flex;flex-direction: row;}
+.zt1{color:#ccc;}
+.dzf{padding-left:20rpx;}
+.qzhifu{background:#ff3b30;border-radius:10px;font-size:16px;color:#fff;padding:10rpx 20rpx;height:40rpx;width:100rpx;margin-top:14rpx;}
+.zongjiage{color:#ccc;}
+.productdetails{width:100%;display: flex;flex-direction: row;padding:20rpx;box-sizing:border-box;}
+.producttitle{display:flex;flex-direction:column;text-align:left;font-size:16px;padding-left:20rpx;}
+.pronum{color:#ccc;padding:20rpx 0rpx;}
+.danhao{font-size:16px;line-height:75rpx;color:#ff3b30;}
+.closeorder{width:100%;display: flex;flex-direction: row;padding:20rpx;font-size:14px;line-height:50rpx;}
+.show .closeorder image{width:50rpx;height:50rpx;}
+.zannone{font-size:14px;line-height:50rpx;padding:20rpx;}
+.times{padding-left:20rpx;}
+.remind{width:100%;padding:10rpx 20rpx;box-sizing:border-box;font-size:14px;}
+.remind text{float:right;border:1px solid #ff3b30;padding:10rpx 20rpx;border-radius:10px;color:#ff3b30;}
+.chakanwuliu{margin-left:20rpx;}

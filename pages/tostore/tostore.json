@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "到店客户",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

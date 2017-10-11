@@ -1,0 +1,44 @@
+/* pages/mylist/mylist.wxss */
+.bguser{display:flex;width:100%;height:330rpx;background-image: url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bannerbg.png);background-repeat: no-repeat;background-position: center center;background-size: cover;flex-direction: row;padding:0rpx 40rpx;box-sizing:border-box;}
+.userbg{width:180rpx;height:180rpx;background:#fff;border-radius:50%;line-height:180rpx;margin:75rpx 0rpx;text-align:center;}
+.userbg image{width:120rpx;height:120rpx;vertical-align:middle;}
+.userword{flex:1;display:flex;flex-direction:column;color:#fff;line-height:328rpx;padding-left:40rpx;}
+.userword .txt2{font-size:36rpx;}
+.userword .txt3{font-size:28rpx;}
+.classname{width:100%;display: flex;flex-direction: column;}
+.erweima{position:relative;width:100%;display: flex;flex-direction: row;height:100rpx;line-height:100rpx;}
+.erweima .erweimaimg{width:50rpx;height:50rpx;vertical-align: middle;padding:25rpx 40rpx;}
+.ewmperson{display: flex;flex-direction: row;flex:1;border-bottom:1px solid #ccc}
+.goldperson{display:flex;flex-direction:row;width:165rpx;padding-right:40rpx;box-sizing:border-box;}
+.goldperson image{width:50rpx;height:50rpx;vertical-align: middle;padding:25rpx 0rpx;}
+.ewmperson1{border:none;}
+.redword{position:absolute;left:205rpx;top:20rpx;font-size:20rpx;background:#ff3b30;width:40rpx;height:40rpx;line-height:40rpx;border-radius:50%;text-align:center;color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!--pages/Mycard/Mycard.wxml-->
+<view class="container">
+    <view class="cardhead">
+        <image class="images1" src="{{userInfo.avatar}}"></image>
+        <view class="signname">
+            <text style="color:#fff;">{{userInfo.linkman}}</text>
+            <view class="signgold">
+                <image class="signimg1" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bizi.png"></image>
+                <text style="padding:4rpx 0rpx 0rpx 10rpx">{{userInfo.credit}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="cardquan">
+            <block wx:for-item="carditem" wx:for="{{list}}">
+                <block wx:if="{{carditem.isexpire==1}}">
+                    <view class="cardlist">
+                        <view class="bgc"></view>
+                        <view class="left">
+                            <text style="font-size:28rpx;color:#fff;">{{carditem.title}}</text>
+                            <text style="font-size:100rpx;color:#fff;">￥{{carditem.reduce_cost}}</text>
+                            <text style="font-size:28rpx;color:#fff;">最低消费：{{carditem.least_cost}}元</text>
+                        </view>
+                        <view class="right">
+                            <text style="padding-bottom:20rpx;font-size:60rpx;color:#fff;">卡券</text>
+                            <text style="font-size:26rpx;color:#fff">{{carditem.starttime}}</text>
+                            <text style="font-size:26rpx;color:#fff">至</text>
+                            <text style="font-size:26rpx;color:#fff">{{carditem.endtime}}</text>
+                            <text style="font-size:26rpx;color:#fff">服务电话：{{carditem.service_phone}}</text>
+                        </view>
+                        <block wx:if="{{carditem.isexpire==1}}">
+                            <text class="bgop"></text>
+                            <image class="Expired" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/expired.png"></image>
+                        </block>
+                    </view>
+                </block>
+                <block wx:else>
+                    <navigator url="../cardintrs/cardintrs" hover-class="none">
+                        <view class="cardlist">
+                            <view class="bgc"></view>
+                            <view class="left">
+                                <text style="font-size:28rpx;color:#fff;">{{carditem.title}}</text>
+                                <text style="font-size:100rpx;color:#fff;">￥{{carditem.reduce_cost}}</text>
+                                <text style="font-size:28rpx;color:#fff;">最低消费：{{carditem.least_cost}}元</text>
+                            </view>
+                            <view class="right">
+                                <text style="padding-bottom:20rpx;font-size:60rpx;color:#fff;">卡券</text>
+                                <text style="font-size:26rpx;color:#fff">{{carditem.starttime}}</text>
+                                <text style="font-size:26rpx;color:#fff">至</text>
+                                <text style="font-size:26rpx;color:#fff">{{carditem.endtime}}</text>
+                                <text style="font-size:26rpx;color:#fff">服务电话：{{carditem.service_phone}}</text>
+                            </view>
+                            <block wx:if="{{carditem.isexpire==1}}">
+                                <text class="bgop"></text>
+                                <image class="Expired" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/expired.png"></image>
+                            </block>
+                        </view>
+                    </navigator>
+                </block>
+            </block>
+    </view>
+</view>

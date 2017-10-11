@@ -1,0 +1,47 @@
+/* pages/cardintrs/cardintrs.wxss */
+page{background:url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bgcsa.jpg) no-repeat;background-size:100% 100%;}
+.intrhead{padding-top:110rpx;width:100%;display: flex;flex-direction: column;text-align:center;}
+.intrhead .touxiang{width:150rpx;height:150rpx;border-radius:50%;margin:0 auto;}
+.majia{width:290rpx;height:400rpx;position:absolute;left:50%;margin-left:-150rpx;top:130rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

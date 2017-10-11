@@ -1,0 +1,149 @@
+<!--pages/productguang/productguang.wxml-->
+<view class="container">
+  <view class="workbg">
+    <text class="mine">创建我的推广 </text>
+    <view class="worknavclass">
+      <view class="swiper-tab">  
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+        {{rand}}
+        </view>  
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="coverworks">
+          活动列表
+        </view>  
+        <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="tongji">
+          成绩
+        </view>  
+        <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="ranking">
+          排行榜
+        </view>  
+      </view>  
+    </view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight *2}}rpx" bindchange="bindChange">  
+      <swiper-item>  
+        <view class="articlelist">
+            <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="bindDownLoad" bindscroll="scroll">
+                <block wx:for-item="listitem" wx:for="{{list}}">
+                  <view class="articleevery">
+                    <block wx:if="{{listitem.photo==''}}">
+                      <text style="margin-right:20px;width:80rpx;height:80rpx;background:#ccc;"></text>
+                    </block>
+                    <block wx:else>
+                      <image src="{{listitem.photo}}"></image>
+                    </block>
+                    <view class="title">
+                      <text class="titlename">{{listitem.title}}</text>
+                      <text class="times">{{listitem.dateline}}</text>
+                    </view>
+                    <view class="share">
+                      <text class="fenxiang">统计</text>
+                    </view>
+                  </view>
+                </block>
+            </scroll-view>
+        </view>
+      </swiper-item>  
+      <swiper-item>  
+        <block wx:if="{{retlength==0}}">哇偶 你还没有创建活动</block>
+        <block wx:else>
+          <view class="articlelist">
+              <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="bindDownLoad" bindscroll="scroll">
+                  <block wx:for-item="listitem1" wx:for="{{list1}}">
+                    <view class="articleevery">
+                      <image src="{{listitem1.photo}}"></image>
+                      <view class="title">
+                        <text class="titlename">{{listitem1.title}}</text>
+                        <text class="times">{{listitem1.dateline}}</text>
+                      </view>
+                      <view class="share">
+                        <text class="fenxiang">统计</text>
+                      </view>
+                    </view>
+                  </block>
+              </scroll-view>
+          </view>
+        </block>
+      </swiper-item>  
+      <swiper-item>  
+        <view class="grads">
+          <view class="moth">
+            <text class="mothnum">2</text>
+            <text class="mothzi">月关注目标</text>
+          </view>
+          <view class="moth">
+            <text class="mothnum">0</text>
+            <text class="mothzi">月关注总数</text>
+          </view>
+          <view class="moth">
+            <text class="mothnum">0</text>
+            <text class="mothzi">月二维码关注</text>
+          </view>
+        </view>
+        <block wx:if="{{retlength ==0}}">
+          <view class="onewords" style="width:100%;text-align:left;border-bottom:2rpx solid #ccc;padding:20rpx 40rpx;box-sizing:border-box;">
+            <text style="font-size:28rpx;">你还没有通过分享文章带来关注用户，不要气馁，赶快去分享文章或产品给好友吧，付出行动，才会有所收获哦！...</text>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="pullnew">
+            <image src="{{listitems.avatar}}"></image>
+            <view class="center">
+              <text class="fname">小花</text>
+              <text class="tjian">推荐人:小黄</text>
+              <text class="tjian">121321321321</text>
+            </view>
+            <view class="right">
+              <text class="lianxi">联系</text>
+            </view>
+          </view>
+        </block>
+      </swiper-item>  
+      <swiper-item>  
+        <view class="Prank">
+          <block wx:for-item="listcus" wx:for="{{lists}}">
+            <view class="customerlist">
+              <view class="cushead">
+                <block wx:if="{{listcus.rank == 1}}">
+                  <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/one.png"></image>
+                </block>
+                <block wx:if="{{listcus.rank == 2}}">
+                  <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/two.png"></image>
+                </block>
+                <block wx:elif="{{listcus.rank == 3}}">
+                  <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/three.png"></image>
+                </block>
+                <block wx:if="{{listcus.rank >=4}}">
+                  <text class="ninecus">{{listcus.rank}}</text>
+                </block>
+              </view>
+              <view class="cusimg">
+                <image src="{{listcus.avatar}}"></image>
+                <text style="font-size:28rpx;padding-left:20rpx;">{{listcus.linkman}}</text>
+              </view>
+              <text style="font-size:36rpx;color:#68c4f6;">{{listcus.number}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="ranks">
+          <block wx:if="{{ranks ==1}}">
+            <text>太棒了,继续加油</text>
+          </block>
+          <block wx:if="{{ranks ==2}}">
+            <text>你真棒，获得了第二名，还要继续加油哦！</text>
+          </block>
+          <block wx:if="{{ranks ==3}}">
+            <text>还不错，可还是要加油哦</text>
+          </block>
+          <block wx:if="{{ranks ==4}}">
+            <text>你排名第四，继续努力</text>
+          </block>
+          <block wx:if="{{ranks ==5}}">
+            <text>你排名第五，继续加油</text>
+          </block>
+          <block wx:else>
+            <text>你的排名很靠后，要继续加油哦</text>
+          </block>
+        </view>
+      </swiper-item>  
+  </swiper> 
+</view>

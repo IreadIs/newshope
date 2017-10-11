@@ -1,0 +1,54 @@
+<!--pages/adminmanger/adminmanger.wxml-->
+<view class="container">
+    <view class="adminlist">
+        <block wx:for-item="adminitem" wx:for="{{list}}">
+          <view class="adminevery">
+              <view class="admintop">
+                <text style="flex:1;"></text>
+                <text class="edit">编辑</text>
+                <view class="morecont" bindtap="adds" data-blan='{{show}}'>
+                  <image class="adds" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/adds.png"></image>
+                  <text style="font-size:28rpx;color:#777;">更多</text>
+                </view>
+              </view>
+              <view class="adminbottom">
+                  <image src="{{adminitem.photo}}"></image>
+                  <view class="admintitle">
+                    <text class="titleadmin">{{adminitem.title}}</text>
+                  </view>
+              </view>
+              <view class="{{show==false?'hidens':'shows'}}">
+                  <block wx:if="{{adminitem.options.length==0}}">
+                    <text class="zwsj">该商品暂无规格，点下方去添加吧</text>
+                  </block>
+                  <block wx:else>
+                    <block wx:for-item="optitem" wx:for="{{adminitem.options}}">
+                      <view class="adshow">
+                          <text class="leftshow">{{optitem.options}}</text>
+                          <text class="centershow">￥{{optitem.special}}</text>
+                          <text class="rightshow">库存：{{optitem.storage}}</text>
+                      </view>
+                      <view class="showimg">
+                        <text style="flex:1;"></text>
+                        <navigator url="../editproduct/editproduct?id={{optitem.id}}" hover-class="none">
+                          <image style="padding-right:20rpx;" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bianjis.png"></image>
+                        </navigator>
+                        <image style="padding-right:20rpx;" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/xiajia.png" bindtap="upjia"></image>
+                        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/deletebn.png" bindtap="deletepro" data-spid="{{adminitem.spid}}"></image>
+                      </view>
+                    </block>
+                  </block>
+                  <view class="guige">
+                    <navigator url="../Addspec/Addspec?id={{adminitem.spid}}"hover-class="none">
+                      <text>+添加规格</text>
+                    </navigator>
+                  </view>
+              </view>
+              <view class="bgc"></view>
+          </view>
+        </block>
+    </view>
+</view>
+<view class="addproduct">
+    添加商品
+</view>

@@ -1,0 +1,49 @@
+/* pages/region/region.wxss */
+.header{padding:0rpx 20rpx;box-sizing:border-box;width:100%;background:url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bannerbg1.png) no-repeat;height:88rpx;line-height:88rpx;}
+.area{width:100%;padding: 20rpx 40rpx;box-sizing:border-box;}
+.areaclass{text-align:center;width:29.33%;border:2rpx solid #ccc;height:80rpx;line-height:80rpx;float:left;margin-right:20rpx;margin-bottom:20rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

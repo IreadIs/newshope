@@ -1,0 +1,21 @@
+<!--pages/addprolist/addprolist.wxml-->
+<view class="container">
+    <view class="zheklist">
+        <view class="prolist">
+            <view class="listevery">
+                <image class="everyimg" src="{{userInfo.avatar}}"></image>
+                <view class="everytitle">
+                    <text style="font-size:30rpx;color:#6d6d72;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;">7.15发布商品</text>
+                    <text style="font-size:26rpx;color:#8e8e93;">佣金：¥0.00</text>
+                    <text style="font-size:26rpx;color:#ff9500;">现价：¥1111.00</text>
+                </view>
+            </view>
+        </view>
+        <view class="seting">
+            <text style="flex:1;"></text>
+            <navigator url="../setdiscount/setdiscount">
+                <text class="shezhi">设置折扣</text>
+            </navigator>
+        </view>
+    </view>
+</view>

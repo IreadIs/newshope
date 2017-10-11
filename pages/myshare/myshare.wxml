@@ -1,0 +1,86 @@
+<!--pages/myshare/myshare.wxml-->
+<view class="container">
+  <view class="userinfos">
+    <!--金币玩法-->
+    <view class="goldicon">
+      <view class="goldcoins"></view>
+      <view class="Customer-service">
+        <image src="{{userInfo.avatar}}"></image>
+        <text style="padding-left:10rpx;line-height:50rpx;">专属客服</text>
+      </view>
+    </view>
+    <!--用户信息-->
+    <view class="userinfo">
+      <view class="username">
+        <image src="{{userInfo.avatar}}"></image>
+        <text>{{userInfo.linkman}}</text>
+      </view>
+      <view class="usericon">
+        <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/jbs_icon.png"></image>
+        <text style="padding-left:20rpx;">{{userInfo.credit}}</text>
+      </view>
+    </view>
+ </view>
+ <!--分类导航-->
+ <view class="activeclass">
+    <navigator url="../sign/sign" class="goldshop" hover-class="none">
+        <view class="goldimg">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/codes.png"></image>
+        </view>
+        <text>赚金币</text>
+    </navigator>
+    <navigator url="../Invitation/Invitation" class="goldshop">
+        <view class="goldimg">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/fausers.png"></image>
+        </view>
+        <text>我的邀请</text>
+    </navigator>
+    <navigator url="../Supermarket/Supermarket" class="goldshop">
+        <view class="goldimg goldbackground">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/goldshop.png"></image>
+        </view>
+        <text>金币商城</text>
+    </navigator>
+    <navigator url="../iconexchange/iconexchange" class="goldshop">
+        <view class="goldimg goldbackground1">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/duixian.png"></image>
+        </view>
+        <text>金币兑现</text>
+    </navigator>
+ </view>
+ <view class="bgc"></view>
+ <view class="shareser">
+    <text style="font-size:32rpx;">服务</text>
+ </view>
+ <view class="sharelist">
+    <block wx:if="{{list.module =='product'}}">
+      <block wx:for-item="shareitem" wx:for="{{list}}">
+        <view class="sharecont">
+            <view class="werther">
+                <text style="font-size:28rpx;">{{shareitem.title}}</text>
+                <text style="font-size:24rpx;color:#999;">{{shareitem.dateline}}</text>
+            </view>
+            <view class="iconnum">
+                <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/signs.png"></image>
+                <text style="font-size:28rpx;color:#ff712f;">+{{shareitem.credits}}</text>
+            </view>
+        </view>
+      </block>
+    </block>
+    <block wx:else>
+      <block wx:for-item="sharesite" wx:for="{{list}}">
+        <view class="sharecont">
+            <image class="shareimgs" src="{{sharesite.photo}}"></image>
+            <view class="werther">
+                <text style="font-size:28rpx;padding-top:15rpx;">{{sharesite.title}}</text>
+                <text style="font-size:24rpx;color:#999;padding-top:15rpx;">{{sharesite.dateline}}</text>
+            </view>
+            <view class="iconnum">
+                <image class="iconimgs" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/signs.png"></image>
+                <text style="font-size:28rpx;color:#ff712f;line-height:120rpx;">+{{sharesite.credits}}</text>
+            </view>
+        </view>
+      </block>
+    </block>
+ </view>
+</view>

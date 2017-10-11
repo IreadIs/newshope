@@ -1,0 +1,46 @@
+/* pages/Invitation/Invitation.wxss */
+@import "../qrcode/qrcode.wxss";
+.workbg{height:308rpx;}
+.swiper-tab{line-height:140rpx;}
+.swiper-tab-list{width:50%;}
+.invihead{width:100%;display: flex;flex-direction: row;}
+.invihead image{width:160rpx;height:160rpx;border-radius:50%;margin:20rpx 40rpx 20rpx;}
+.mashang{padding:40rpx;box-sizing:border-box;}
+.refresh{top:285rpx;right:80rpx;}
+.invilist{width:100%;display: flex;flex-direction: column;padding:10rpx 20rpx;box-sizing:border-box;}
+.invilist image{width:80rpx;height:80rpx;border-radius:50%;}
+.invicenter{flex:1;display: flex;flex-direction: column;}
+.inviright image{width:52rpx;height:52rpx;padding-top:20rpx;padding-right:10rpx;}
+.invizong{padding:10rpx 0rpx;width:100%;display: flex;flex-direction: row;border-bottom:2rpx solid #ccc;}
+.inviright{display: flex;flex-direction: row;line-height:80rpx;}
+.inviuser{font-size:28rpx;display: flex;flex-direction: column;padding:10rpx 40rpx;box-sizing:border-box;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

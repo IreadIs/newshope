@@ -1,0 +1,43 @@
+/* pages/Supermarket/Supermarket.wxss */
+.iconone{width:100%;border-bottom:7px dotted #fff0db;z-index:10;display: flex;flex-direction: column;text-align:center;margin:140rpx 0 50rpx 0;}
+.blue{color:#ffa426;font-size:80rpx;padding:20rpx 0 40rpx 0;}
+.shadowimg{width:100%;height:30rpx;text-align: center;margin:0 auto;}
+.shadowimg image{width:200rpx;height:30rpx;}
+.tips{width:100%;box-sizing:border-box;padding:0 40rpx;}
+.tipscon{font-size:14px;padding-bottom: 20rpx;display: flex;}
+.wentips{padding-bottom: 20rpx;display: flex;}
+.graintr{display: flex;flex-direction: row;width: 100%;box-sizing: border-box;padding:20rpx 40rpx 40rpx 40rpx;}
+.mingxi,.shuoming{display: flex;flex-direction: row;width:220rpx; height:70rpx;line-height:70rpx; border:1px solid #ccc;padding:10rpx;border-radius:10px;}
+.mingxi image,.shuoming image{width:60rpx;height:60rpx;}
+.blank{display: flex;flex: 1;}
+.exchange{width:100%;text-align: center;display: flex;flex-direction: row;}
+.ecgoods{width:160rpx;padding:0 20rpx;}
+.line{display: flex;flex: 1;background:#000;height:4rpx;margin-top:18rpx;}
+.superlist{margin-top:50rpx;width:100%;padding:20rpx 10rpx;display: flex;flex-direction: row;box-sizing:border-box;}
+.marketlist{width:100%;}
+.listcon{width:48%;float:left;display: flex;flex-direction: column;padding-left:15rpx;}
+.super1{font-size:28rpx;color:#333;padding-top:10rpx;padding-left:10rpx;}
+.super2{font-size:28rpx;color:#ff9500;padding-bottom:10rpx;padding-left:10rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "White",
+    "navigationBarTitleText": "限时折扣",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+}

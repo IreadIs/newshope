@@ -1,0 +1,40 @@
+ /* pages/pubdynamics/pubdynamics.wxss */
+textarea{font-size:32rpx;width:100%;border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding:0rpx 40rpx;box-sizing:border-box;}
+.upload{width:100%;padding:20rpx 40rpx;box-sizing:border-box;flex-direction: row;}
+.uploadborder{display:flex;text-align:center;width:182rpx;height:182rpx;border:1px dashed #ccc;flex-direction: column;color:#999;font-size:32rpx;}
+.uploadborder image{width:60rpx;height:60rpx;padding-top:42rpx;padding-left:60rpx;}
+.uploadnum{display: flex;flex-direction: row;padding:0rpx 60rpx;}
+.fan{background:#ff3b30;font-size:28rpx;color:#fff;width:260rpx;height:66rpx;border-radius:20rpx;text-align:center;line-height:66rpx;}
+.tjiao{margin-left:147rpx;background:#4cd964;font-size:28rpx;color:#fff;width:260rpx;height:66rpx;border-radius:20rpx;text-align:center;line-height:66rpx;}
+.subbtn{display:   flex;flex-direction: row;width:100%;padding:0rpx 40rpx;box-sizing: border-box;}
+.showimg{float:left;width:182rpx;height:182rpx;padding-right:20rpx;padding-bottom:20rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

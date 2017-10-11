@@ -1,0 +1,50 @@
+/* pages/Label/Label.wxss */
+.bannerbg{position:relative;width:100%;height:176rpx;background-image: url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bannerbg1.png);background-repeat: no-repeat;background-position: center center;}
+.bgc{position:absolute;width:100%;height:88rpx;line-height:88rpx;background:#000;opacity:0.1;}
+.goodfriend{width:100%;display: flex;flex-direction: row;font-size:28rpx;color:#fff;height:88rpx;line-height:88rpx;padding:0rpx 40rpx;box-sizing:border-box;}
+.serch{width:100%;padding:40rpx 40rpx;box-sizing: border-box;}
+.serchborder{width:100%;border:1px solid #ccc;border-radius:10rpx;font-size:28rpx;line-height:56rpx;height:56rpx;display: flex;flex-direction: row;}
+.serchborder image{width:50rpx;height:50rpx;}
+.serchborder input{flex:1;height:56rpx;line-height:56rpx;padding:0rpx 10rpx;}
+.friendlist{width:100%;display: flex;flex-direction: column;padding:0rpx 40rpx;box-sizing: border-box;}
+.goodfrship{width:100%;display: flex;flex-direction: row;height:126rpx;line-height:126rpx;}
+.goodfrship .gfshipimg{width:80rpx;height:80rpx;margin-right:30rpx;vertical-align:middle;margin-top:23rpx;border-radius:50%;}
+.gfshipname{width:100%;display: flex;flex-direction: column;flex:1;border-bottom:1px solid #ccc;line-height:40rpx;padding-top:20rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

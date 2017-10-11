@@ -1,0 +1,29 @@
+<!--pages/region/region.wxml-->
+<view class="container">
+  <view class="header">
+    <text style="font-size:32rpx;color:#fff;">开发新客户-按地域</text>
+  </view>
+  <view class="area">
+    <block wx:for-item="listitem"  wx:for="{{list}}">
+        <navigator url="../areas/areas?region={{index}}">
+          <view class="areaclass">
+            <text style="font-size:28rpx;">{{index}}<text style="color:#1c90fe">({{listitem}})</text>人</text>
+          </view>
+        </navigator>
+    </block>
+<!--
+    <view class="areaclass">
+      <text style="font-size:28rpx;">江苏(4)人</text>
+    </view>
+    <view class="areaclass">
+      <text style="font-size:28rpx;">湖南(4)人</text>
+    </view>
+    <view class="areaclass">
+      <text style="font-size:28rpx;">广东(4)人</text>
+    </view>
+    <view class="areaclass">
+      <text style="font-size:28rpx;">黑龙江(4)人</text>
+    </view>
+-->
+  </view>
+</view>

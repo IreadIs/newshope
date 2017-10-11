@@ -1,0 +1,321 @@
+<!--pages/ranking/ranking.wxml-->
+<view class="containers">
+  <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}" style="height:{{windowHeight*2}}rpx;" bindchange="slidrank">
+    <swiper-item>
+      <view class="bannerbg">
+        <view class="bgc"></view>
+        <view class="goodfriend">
+          <text>部门销售排行</text>
+        </view>
+      </view>
+      <!--搜索-->
+      <view class="serch">
+        <view class="serchborder">
+          <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+          <input type="text" placeholder="搜索...." placeholder-style="font-size:28rpx;color:#999;"/>
+          <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+        </view>
+      </view>
+      <!--列表展示-->
+      <view class="listrank">
+        <!--表头-->
+        <view class="rankmenu">
+          <text>部门</text>
+          <text>线上销售额(¥)</text>
+          <text>线下销售额(¥)</text>
+          <text>总计</text>
+        </view>
+        <!--列表内容-->
+        <block wx:for-item="rankitem" wx:for="{{ranking}}">
+          <view class="ranklist">
+            <view class="rankevery">
+              <text>{{rankitem.title}}</text>
+              <text>{{rankitem.xianshang}}</text>
+              <text>{{rankitem.xianxia}}</text>
+              <text>{{rankitem.sales}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="bannerbg">
+        <view class="bgc"></view>
+        <view class="goodfriend goodfirends">
+          <text>员工销售排行</text>
+          <view class="tabranking">
+            <view class="{{selected?'red':'default'}}" bindtap="selected">
+              <view class="smone clearfix">
+                <view class="smcont">
+                  <text>日</text>
+                </view>
+              </view>
+            </view>
+            <view class="{{selected1?'red':'default'}}" bindtap="selected1">
+              <view class="smone clearfix">
+                <view class="smcont">
+                  <text>月</text>
+                </view>
+              </view>
+            </view>
+            <view class="{{selected2?'red':'default'}}" bindtap="selected2">
+              <view class="smone clearfix">
+                <view class="smcont">
+                  <text>年</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!--start-->
+        <view class="{{selected?'show':'hidden'}}">
+          <!--搜索-->
+          <view class="serch">
+            <view class="serchborder">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+              <input type="text" placeholder="搜索...." style="text-align:left;" placeholder-style="font-size:28rpx;color:#999;text-align:left;"/>
+              <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+            </view>
+          </view>
+          <view class="listrank">
+            <!--表头-->
+            <view class="rankmenu">
+              <text>员工</text>
+              <text>线上销售额(¥)</text>
+              <text>线下销售额(¥)</text>
+              <text>总计</text>
+            </view>
+            <!--列表内容-->
+            <block wx:for-item="rankitems" wx:for="{{rankingsale}}">
+              <view class="ranklist">
+                <view class="rankevery">
+                  <text>{{rankitems.username}}</text>
+                  <text>{{rankitems.xianshang}}</text>
+                  <text>{{rankitems.xianxia}}</text>
+                  <text>{{rankitems.sales}}</text>
+                </view>
+              </view>
+            </block>
+          </view>         
+        </view>  
+        <view class="{{selected1?'show':'hidden'}}">
+          <view class="serch">
+            <view class="serchborder">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+              <input type="text" placeholder="搜索...." style="text-align:left;" placeholder-style="font-size:28rpx;color:#999;text-align:left;"/>
+              <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+            </view>
+          </view>
+          <view class="listrank">
+            <!--表头-->
+            <view class="rankmenu">
+              <text>员工</text>
+              <text>线上销售额(¥)</text>
+              <text>线下销售额(¥)</text>
+              <text>总计</text>
+            </view>
+            <!--列表内容-->
+            <block wx:for-item="rankitemm" wx:for="{{rankingmonth}}">
+              <view class="ranklist">
+                <view class="rankevery">
+                  <text>{{rankitemm.username}}</text>
+                  <text>{{rankitemm.xianshang}}</text>
+                  <text>{{rankitemm.xianxia}}</text>
+                  <text>{{rankitemm.sales}}</text>
+                </view>
+              </view>
+            </block>
+          </view>  
+        </view>
+        <view class="{{selected2?'show':'hidden'}}">
+          <view class="serch">
+            <view class="serchborder">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+              <input type="text" placeholder="搜索...." style="text-align:left;" placeholder-style="font-size:28rpx;color:#999;text-align:left;"/>
+              <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+            </view>
+          </view>
+          <view class="listrank">
+            <!--表头-->
+            <view class="rankmenu">
+              <text>员工</text>
+              <text>线上销售额(¥)</text>
+              <text>线下销售额(¥)</text>
+              <text>总计</text>
+            </view>
+            <!--列表内容-->
+            <block wx:for-item="rankitemy" wx:for="{{rankingyear}}">
+              <view class="ranklist">
+                <view class="rankevery">
+                  <text>{{rankitemy.username}}</text>
+                  <text>{{rankitemy.xianshang}}</text>
+                  <text>{{rankitemy.xianxia}}</text>
+                  <text>{{rankitemy.sales}}</text>
+                </view>
+              </view>
+            </block>
+          </view>  
+        </view>
+      <!--end-->
+    </swiper-item>
+    <swiper-item>
+      <view class="bannerbg">
+        <view class="bgc"></view>
+        <view class="goodfriend goodfirends">
+          <text>员工客户排行</text>
+        </view>
+      </view>
+      <view class="listrank">
+            <!--表头-->
+            <view class="rankmenu rankmenus">
+              <text>员工</text>
+              <text>20%~39%</text>
+              <text>40%~59%</text>
+              <text>60%~79%</text>
+              <text>80%~99%</text>
+              <text>100%</text>
+            </view>
+            <!--列表内容-->
+            <block wx:for-item="rankitemc" wx:for="{{rankingcustomer}}">
+              <view class="ranklist">
+                <view class="rankevery">
+                  <text>{{rankitemc.username}}</text>
+                  <text>{{rankitemc.potential}}</text>
+                  <text>{{rankitemc.intent}}</text>
+                  <text>{{rankitemc.prospect}}</text>
+                  <text>{{rankitemc.promotion}}</text>
+                  <text>{{rankitemc.customer}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="bannerbg">
+        <view class="bgc"></view>
+        <view class="goodfriend goodfirends">
+          <text>服务排行</text>
+          <view class="tabranking">
+            <view class="{{selected3?'red':'default'}}" bindtap="selected3">
+              <view class="smone clearfix">
+                <view class="smcont">
+                  <text>日</text>
+                </view>
+              </view>
+            </view>
+            <view class="{{selected4?'red':'default'}}" bindtap="selected4">
+              <view class="smone clearfix">
+                <view class="smcont">
+                  <text>月</text>
+                </view>
+              </view>
+            </view>
+            <view class="{{selected5?'red':'default'}}" bindtap="selected5">
+              <view class="smone clearfix">
+                <view class="smcont">
+                  <text>年</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!--start-->
+        <view class="{{selected3?'show':'hidden'}}">
+          <!--搜索-->
+          <view class="serch">
+            <view class="serchborder">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+              <input type="text" placeholder="搜索...." style="text-align:left;" placeholder-style="font-size:28rpx;color:#999;text-align:left;"/>
+              <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+            </view>
+          </view>
+          <view class="listrank">
+            <!--表头-->
+            <view class="rankmenu rankmenuser">
+              <text>销售</text>
+              <text>金币</text>
+              <text>服务</text>
+            </view>
+            <!--列表内容-->
+            <block wx:for-item="rankitemsrvice" wx:for="{{rankingservice}}">
+              <view class="ranklist">
+                <view class="rankevery rankeverys">
+                  <view class="userrankimg">
+                    <image src="{{rankitemsrvice.avatar}}"></image>
+                    <text>{{rankitemsrvice.username}}</text>
+                  </view>
+                  <text>{{rankitemsrvice.credits}}</text>
+                  <text>{{rankitemsrvice.servicefor}}</text>
+                </view>
+              </view>
+            </block>
+          </view>         
+        </view>  
+        <view class="{{selected4?'show':'hidden'}}">
+           <!--搜索-->
+          <view class="serch">
+            <view class="serchborder">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+              <input type="text" placeholder="搜索...." style="text-align:left;" placeholder-style="font-size:28rpx;color:#999;text-align:left;"/>
+              <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+            </view>
+          </view>
+          <view class="listrank">
+            <!--表头-->
+            <view class="rankmenu rankmenuser">
+              <text>销售</text>
+              <text>金币</text>
+              <text>服务</text>
+            </view>
+            <!--列表内容-->
+            <block wx:for-item="rankitemsrvicem" wx:for="{{rankingsermonth}}">
+              <view class="ranklist">
+                <view class="rankevery rankeverys">
+                  <view class="userrankimg">
+                    <image src="{{rankitemsrvicem.avatar}}"></image>
+                    <text>{{rankitemsrvicem.username}}</text>
+                  </view>
+                  <text>{{rankitemsrvicem.credits}}</text>
+                  <text>{{rankitemsrvicem.servicefor}}</text>
+                </view>
+              </view>
+            </block>
+          </view>      
+        </view>
+        <view class="{{selected5?'show':'hidden'}}">
+          <!--搜索-->
+          <view class="serch">
+            <view class="serchborder">
+              <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+              <input type="text" placeholder="搜索...." style="text-align:left;" placeholder-style="font-size:28rpx;color:#999;text-align:left;"/>
+              <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+            </view>
+          </view>
+          <view class="listrank">
+            <!--表头-->
+            <view class="rankmenu rankmenuser">
+              <text>销售</text>
+              <text>金币</text>
+              <text>服务</text>
+            </view>
+            <!--列表内容-->
+            <block wx:for-item="rankitemsrvicemfg" wx:for="{{rankingseryear}}">
+              <view class="ranklist">
+                <view class="rankevery rankeverys">
+                  <view class="userrankimg">
+                    <image src="{{rankitemsrvicemfg.avatar}}"></image>
+                    <text>{{rankitemsrvicemfg.username}}</text>
+                  </view>
+                  <text>{{rankitemsrvicemfg.credits}}</text>
+                  <text>{{rankitemsrvicemfg.servicefor}}</text>
+                </view>
+              </view>
+            </block>
+          </view>  
+        </view>
+      <!--end-->
+    </swiper-item>
+  </swiper>
+</view>

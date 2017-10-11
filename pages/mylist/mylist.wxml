@@ -1,0 +1,95 @@
+<!--pages/mylist/mylist.wxml-->
+<view class="container">
+  <view class="bguser">
+    <view class="userbg">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/mylist.png"></image>
+    </view>
+    <view class="userword">
+      <text class="txt2">{{userInfo.linkman}}</text>
+    </view>
+  </view>
+  <view class="classname">
+    <navigator url="../user/user" hover-class="none">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon_customer.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">个人资料</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../myfriend/myfriend" hover-class="none">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-friends.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">好友</text>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../mynews/mynews" hover-class="none">
+        <view class="erweima">
+          <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-message.png"></image>
+          <view class="ewmperson">
+            <text style="font-size:32rpx;flex:1;">消息</text>
+          </view>
+        </view>
+    </navigator>
+    <navigator url="../work/work" hover-class="none">
+      <view class="erweima">
+        <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-work.png"></image>
+        <view class="ewmperson">
+          <text style="font-size:32rpx;flex:1;">工作</text>
+        </view>
+        <block wx:if="{{list>0}}">
+          <view class="redword">
+            <text>{{list}}</text>
+          </view>
+        </block>
+        <block wx:else></block>
+      </view>
+    </navigator>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-calendar.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">日历</text>
+      </view>
+    </view>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-meeting.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">群</text>
+      </view>
+    </view>
+    <navigator url="../dynamic/dynamic" hover-class="none">
+        <view class="erweima">
+          <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-moments.png"></image>
+          <view class="ewmperson">
+            <text style="font-size:32rpx;flex:1;">动态</text>
+          </view>
+        </view>
+    </navigator>
+    <navigator url="../ranking/ranking" hover-class="none">
+        <view class="erweima">
+          <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-rank1.png"></image>
+          <view class="ewmperson">
+            <text style="font-size:32rpx;flex:1;">排行榜</text>
+          </view>
+        </view>
+    </navigator>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-morning.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">报告</text>
+      </view>
+    </view>
+    <!--
+        <view class="erweima">
+          <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/icon-rank.png"></image>
+          <view class="ewmperson ewmperson1">
+            <text style="font-size:32rpx;flex:1;">待审批</text>
+          </view>
+        </view>
+    -->
+  </view>
+</view>
+
+

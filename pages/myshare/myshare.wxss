@@ -1,0 +1,42 @@
+/* pages/myshare/myshare.wxss */
+@import "../index/index.wxss";
+.shareser{width:100%;border-bottom:2rpx solid #ccc;padding:10rpx 20rpx;box-sizing:border-box;}
+.sharelist{width:100%;display: flex;flex-direction: column;}
+.sharecont{width:100%;display: flex;flex-direction: row;padding:20rpx;box-sizing: border-box;}
+.iconnum{display: flex;flex-direction: row;line-height:70rpx;}
+.iconnum image{width:52rpx;height:52rpx;padding-top:9rpx;}
+.werther{display: flex;flex-direction: column;flex:1;}
+.shareimgs{width:120rpx;height:120rpx;padding-right:20rpx;}
+.iconnum .iconimgs{width:52rpx;height:52rpx;padding-top:40rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

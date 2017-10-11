@@ -1,0 +1,51 @@
+<!--pages/oldcustomerlist/oldcustomerlist.wxml-->
+<view class="container">
+  <view class="bguser">
+    <view class="userbg">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/oldcustomer.png"></image>
+    </view>
+    <view class="userword">
+      <text class="txt2">服务老客户</text>
+      <text class="txt3">让老客户多次购买和让老客户带来更多的新客户</text>
+    </view>
+  </view>
+  <view class="classname">
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/holiday01.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">老客户列表</text>
+      </view>
+    </view>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/holiday02.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">交流内容(嘘寒问暖、节日祝福、天气提醒)</text>
+      </view>
+    </view>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/holiday03.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">教客户玩转企业Plus</text>
+      </view>
+    </view>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/holiday04.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">促销活动</text>
+      </view>
+    </view>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/xsjl.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">销售记录</text>
+      </view>
+    </view>
+    <view class="erweima">
+      <image class="erweimaimg" src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/holiday05.png"></image>
+      <view class="ewmperson">
+        <text style="font-size:32rpx;flex:1;">买家秀</text>
+      </view>
+    </view>
+  </view>
+</view>
+

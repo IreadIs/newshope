@@ -1,0 +1,46 @@
+/* pages/addprolist/addprolist.wxss */
+.zheklist{width:100%;display: flex;flex-direction: column;}
+.prolist{width:100%;background:#efeff4;height:200rpx;display: flex;flex-direction: column;}
+.listevery{width:100%;display: flex;flex-direction: row;padding:10rpx 20rpx;box-sizing:border-box;}
+.everyimg{width:160rpx;height:160rpx;padding-top:10rpx;}
+.everytitle{display:flex;flex-direction:column;flex:1;padding-top:20rpx;padding-left:20rpx;line-height:46rpx;}
+.seting{width:100%;display: flex;flex-direction: row;padding:10rpx 20rpx;box-sizing: border-box;}
+.shezhi{border:2rpx solid #ccc;padding:8rpx 10rpx;font-size:28rpx;display:block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

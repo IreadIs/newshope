@@ -1,0 +1,72 @@
+<!--pages/push/push.wxml-->
+<view class="container">
+  <view class="bannerbg">
+    <view class="bgc"></view>
+    <view class="goodfriend">
+      <text>{{nickname}}</text>
+      <text>订单</text>
+    </view>
+  </view>
+  <!--搜索-->
+  <view class="serch">
+    <view class="serchborder">
+      <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/serch.png"></image>
+      <input type="text" placeholder="搜索...." placeholder-style="font-size:28rpx;color:#999;" bindinput="bindInput"/>
+      <text style="color:#007aff;font-size:28rpx;padding-right:20rpx;" bindtap="setSearchStorage">搜索</text>
+    </view>
+    <view>{{output}}</view>
+  </view>
+  <!--好友列表-->
+  <block wx:if="{{friendship ==''}}">
+    <view class="noneshu">  
+      <text>{{zanwu}}</text>
+    </view>
+  </block>
+  <block else>
+    <block wx:if="{{inputValue !=''}}">
+      <view class="friendlist">
+          <block wx:for-item="listitem" wx:for="{{friendships}}">
+            <navigator url="../members/members?uid={{listitem.uid}}" hover-class="none" class="goodfrship">
+                  <image class="gfshipimg" src="{{listitem.photo}}"></image>
+                  <view class="readborder">
+                    <view class="gfshipname">
+                      <text style="font-size:28rpx;color:#000;">{{listitem.title}}</text>
+                      <text style="font-size:24rpx;color:#8e8e93;">{{listitem.dateline}}</text>
+                    </view>
+                    <view class="iread">
+                      <text class="readtext">{{listitem.isreadstr}}</text>
+                    </view>
+                  </view>
+            </navigator>
+          </block>
+      </view>
+    </block>
+    <block wx:else>
+      <view  class="friendlist">
+            <block wx:for-item="listitem" wx:for="{{friendship}}">
+              <navigator url="../members/members?uid={{listitem.uid}}" hover-class="none"  class="goodfrship">
+                    <image class="gfshipimg" src="{{listitem.photo}}"></image>
+                    <view class="readborder">
+                      <view class="gfshipname">
+                        <text style="font-size:28rpx;color:#000;">{{listitem.title}}</text>
+                        <text style="font-size:24rpx;color:#8e8e93;">{{listitem.dateline}}</text>
+                      </view>
+                      <view class="iread">
+                      <block wx:if="{{listitem.isreadstr =='已读'}}">
+                        <text class="readtext" style="background:#4cd964">{{listitem.isreadstr}}</text>
+                      </block>
+                      <block wx:else>
+                        <text class="readtext" style="background:#8e8e93">{{listitem.isreadstr}}</text>
+                      </block>
+                      </view>
+                    </view>
+              </navigator>
+            </block>
+      </view>
+    </block>
+  </block>
+</view>
+<block wx:for-item="list" wx:for="{{stimptimes}}">
+{{list}}
+</block>
+

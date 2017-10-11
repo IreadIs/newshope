@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "获取新用户",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

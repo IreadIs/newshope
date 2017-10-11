@@ -1,0 +1,48 @@
+/* pages/Supplier/Supplier.wxss */
+.supbg{width:100%;display: flex;flex-direction: row;height:276rpx;background:url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/userbg.jpg) no-repeat;}
+.supname{padding-top:80rpx;line-height:60rpx;flex:1;display: flex;flex-direction: column;}
+.supbg image{margin:62rpx 40rpx;width:148rpx;height:148rpx;border: 2rpx solid #fff;border-radius:50%;}
+.supclass{padding:20rpx 0rpx;width:100%;display: flex;flex-direction: row;}
+.supone{border-right:2rpx solid #ccc;width:33.33%;display: flex;flex-direction: column;text-align:center;}
+.bgc{width:100%;height:25rpx;background:#efeff4;}
+.suplist{width:100%;display: flex;flex-direction: column;}
+.suplistitem{width:100%;height:88rpx;display: flex;flex-direction: row;padding:10rpx 20rpx;box-sizing:border-box;line-height:60rpx;}
+.supgl{flex:1;font-size:24rpx;border-bottom:2rpx solid #ccc;}
+.supimg1{width:40rpx;height:40rpx;padding:10rpx 20rpx;}
+.supimg2{width:60rpx;height:60rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

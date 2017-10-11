@@ -1,0 +1,108 @@
+<!--pages/Orderman/Orderman.wxml-->
+<view class="container">
+    <view class="nav bc_white">
+            <view class="{{selected?'red':'default'}}" bindtap="selected">
+                    <view class="smone clearfix">
+                            <view class="smcont">
+                                    <text>代发货</text>
+                            </view>
+                    </view>
+            </view>
+            <view class="{{selected1?'red':'default'}}" bindtap="selected1">
+                    <view class="smone clearfix" bindtap="fktap">
+                            <view class="smcont">
+                                    <text>售后申请</text>
+                            </view>
+                    </view>
+            </view>
+
+        <view class="{{selected2?'red':'default'}}" bindtap="selected2">
+                    <view class="smone clearfix"  bindtap="fhtap">
+                            <view class="smcont">
+                                    <text>全部</text>
+                            </view>
+                    </view>
+            </view>
+    </view>
+    <view class="{{selected?'show':'hidden'}}">
+           <view class="Shiplist">
+                <block wx:if="{{list == 0}}">
+                    <text style="width:100%;background:#efeff4;color:red;font-size:28rpx;padding:10rpx 20rpx;box-sizing:border-box;">暂无代发货</text>
+                </block>
+                <block wx:else>
+                    <block wx:for="orderitem" wx:for="{{list}}">
+                        <view class="shiptables">
+                            <view class="listtop">
+                                <view class="danhao">
+                                    <text>订单单号：{{orderitem.orderno}}</text>
+                                    <text>下单时间：{{orderitem.dateline}}</text>
+                                </view>
+                                <view class="zhifu">{{orderitem.flagstr}}</view>
+                            </view>
+                            <block wx:for-item="infoitem" wx:for="{{orderitem.info}}">
+                                <view class="listbottom">
+                                    <image src="{{infoitem.photo}}"></image>
+                                    <text>数量：{{infoitem.quantity}}</text>
+                                </view>
+                            </block>
+                            <view class="bgc"></view>
+                        </view>
+                    </block>
+                </block>
+           </view>
+    </view>
+    <view class="{{selected1?'show':'hidden'}}">
+           <view class="Shiplist">
+                <block wx:if="{{list2 == 0}}">
+                    <text style="width:100%;background:#efeff4;color:red;font-size:28rpx;padding:10rpx 20rpx;box-sizing:border-box;">暂无售后申请</text>
+                </block>
+                <block wx:else>
+                    <block wx:for="orderitem" wx:for="{{list2}}">
+                        <view class="shiptables">
+                            <view class="listtop">
+                                <view class="danhao">
+                                    <text>订单单号：{{orderitem.orderno}}</text>
+                                    <text>下单时间：{{orderitem.dateline}}</text>
+                                </view>
+                                <view class="zhifu">{{orderitem.flagstr}}</view>
+                            </view>
+                            <block wx:for-item="infoitem" wx:for="{{orderitem.info}}">
+                                <view class="listbottom">
+                                    <image src="{{infoitem.photo}}"></image>
+                                    <text>数量：{{infoitem.quantity}}</text>
+                                </view>
+                            </block>
+                            <view class="bgc"></view>
+                        </view>
+                    </block>
+                </block>
+           </view>
+    </view>
+    <view class="{{selected2?'show':'hidden'}}">
+            <view class="Shiplist">
+                <block wx:if="{{list3 == 0}}">
+                    <text style="width:100%;background:#efeff4;color:red;font-size:28rpx;padding:10rpx 20rpx;box-sizing:border-box;">亲，你这里没有订单需要管理哦</text>
+                </block>
+                <block wx:else>
+                    <block wx:for="orderitem" wx:for="{{list3}}">
+                        <view class="shiptables">
+                            <view class="listtop">
+                                <view class="danhao">
+                                    <text>订单单号：{{orderitem.orderno}}</text>
+                                    <text>下单时间：{{orderitem.dateline}}</text>
+                                </view>
+                                <view class="zhifu">{{orderitem.flagstr}}</view>
+                            </view>
+                            <block wx:for-item="infoitem" wx:for="{{orderitem.info}}">
+                                <view class="listbottom">
+                                    <image src="{{infoitem.photo}}"></image>
+                                    <text>数量：{{infoitem.quantity}}</text>
+                                </view>
+                            </block>
+                            <view class="bgc"></view>
+                        </view>
+                    </block>
+                </block>
+           </view>
+    </view>
+</view>

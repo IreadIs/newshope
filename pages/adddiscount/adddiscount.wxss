@@ -1,0 +1,48 @@
+/* pages/adddiscount/adddiscount.wxss */
+.discount{width:100%;display: flex;flex-direction: column;}
+.discountlist{width:100%;display: flex;flex-direction: row;padding:0rpx 40rpx 20rpx 40rpx;border-bottom:2rpx solid #ccc;box-sizing: border-box;}
+.discountimg{width:160rpx;height:160rpx;}
+.discounttitle{flex:1;display: flex;flex-direction: column;padding-left:20rpx;line-height:40rpx;}
+.editdelete{width:100%;padding:10rpx 20rpx;box-sizing: border-box;display: flex;flex-direction: row;}
+.choice{display: flex;flex-direction: row;}
+.choice .bs{font-size:28rpx;border: #ececec 1px solid;padding:8rpx 10px;color: inherit;}
+.addproduct{width:100%;height:90rpx;background:#ff9500;text-align:center;color:#fff;line-height:90rpx;position: fixed;bottom:0rpx;font-size:28rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

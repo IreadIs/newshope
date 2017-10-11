@@ -1,0 +1,49 @@
+<!--pages/setdiscount/setdiscount.wxml-->
+<view class="container">
+    <view class="bgc"></view>
+    <view class="discounthead">
+        <image src="{{userInfo.avatar}}"></image>
+        <view class="distitle">
+            <text style="font-size:24rpx;color:#6d6d72;">海景房</text>
+            <text style="font-size:24rpx;color:#ff3b30;">¥11.00</text>
+        </view>
+    </view>
+    <view class="bgc"></view>
+    <view class="dissetlist">
+        <view class="disprice">
+            <text style="font-size:24rpx;color:#6d6d72;font-weight:bold;">折扣价格:</text>
+            <input  bindinput="jiage" type="text" placeholder="折扣价格" placeholder-style="font-size:24rpx;"/>
+        </view>
+        <view class="disprice">
+            <text style="font-size:24rpx;color:#6d6d72;font-weight:bold;">开始时间:</text>
+            <picker mode="date" value="{{date}}" start="1978-01-01" bindchange="bindDateChange">  
+                <view class="picker">  
+                {{dates}}  
+                </view>  
+            </picker>  
+        </view>
+        <view class="disprice">
+            <text style="font-size:24rpx;color:#6d6d72;font-weight:bold;">结束时间:</text>
+            <picker mode="date" value="{{date}}" start="1978-01-01" bindchange="bindDateChange1">  
+                <view class="picker">  
+                {{dates1}}  
+                </view>  
+            </picker>  
+        </view>
+        <view class="disprice">
+            <text style="font-size:24rpx;color:#6d6d72;font-weight:bold;">是否限购:</text>
+            <switch bindchange="switch1Change"/>
+        </view>
+        <view class="{{disshow ==true?'show':'hiden'}}">
+            <text style="font-size:24rpx;color:#6d6d72;font-weight:bold;">限购数量:</text>
+            <input  bindinput="xiangou" style="padding-top:16rpx;padding-left:20rpx;" type="text" placeholder="限购数量" placeholder-style="font-size:24rpx;"/>
+        </view>
+    </view>
+    <text style="font-size:28rpx;color:#FF3B2E;width:100%;padding:0rpx 20rpx;box-sizing:border-box;">注：限时折扣的商品，拍下30分钟未付款将自动关闭订单</text>
+    <view class="disbtn">
+        <navigator  class="discancle" url="../adddiscount/adddiscount" hover-class="none">
+            <text>取消</text>
+        </navigator>
+        <text class="dissuer" bindtap="dissure">确定</text>
+    </view>
+</view>

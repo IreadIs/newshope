@@ -1,0 +1,55 @@
+/* pages/JobDetails/JpbDetails.wxss */
+.userbanner{padding:0rpx 20rpx;box-sizing:border-box;width:100%;display: flex;flex-direction: row;background:url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bannerbg.png) center center no-repeat;height: 200rpx;line-height: 200rpx;}
+.userbanner image{margin:20rpx 0rpx;width:160rpx;height:160rpx;border-radius:50%;background:#fff;}
+.Remarks{width:100%;display: flex;flex-direction: column;padding:0rpx 20rpx;box-sizing:border-box;}
+.remarksb{margin-top:20rpx;padding:10rpx 20rpx;width:100%;border:2rpx solid #ccc;box-sizing:border-box;}
+.remarksb textarea{width:100%;height: 200rpx;font-size:28rpx;}
+.jijue{font-size:14px;background:#4cd964;color:#fff;width:300rpx;display:block;margin:20rpx auto;text-align:center;padding:20rpx 0rpx;border-radius:10rpx;}
+.requestion{display: flex;flex-direction: row;}
+.bgc{width:100%;height:35rpx;background:#efeff4;}
+.cuslist{width:100%;display: flex;flex-direction: column;padding:10rpx 20rpx;box-sizing:border-box;}
+.cuslist text{font-size:28rpx;line-height:50rpx;} 
+.table{margin-bottom:40rpx;margin-top:20rpx;width:100%;display: flex;flex-direction: column;box-sizing:border-box;border:2rpx solid #ccc;}
+.tr{background:#dfdfdf;border-bottom:2rpx solid #ccc;line-height:60rpx;width:100%;display: flex;flex-direction: row;font-size:28rpx;}
+.th1{width:40%;border-right:2rpx solid #999;padding-left:15rpx;}
+.th2{width:60%;padding-left:15rpx;}
+.biankuang{width:100%;padding: 0rpx 20rpx;box-sizing: border-box;}
+.tr1,.tr3,.tr5,.tr7{background:#fff;border-bottom:2rpx solid #ccc;line-height:60rpx;width:100%;display: flex;flex-direction: row;font-size:28rpx;}
+.tr2,.tr4,.tr6{background:#f7f7f7;border-bottom:2rpx solid #ccc;line-height:60rpx;width:100%;display: flex;flex-direction: row;font-size:28rpx;}
+.Record{box-sizing:border-box;width:100%;display: flex;flex-direction: row;padding:10rpx 20rpx;border-bottom:1px solid #ccc;}
+.records{flex:1;text-align:right;}
+.records image{width:40rpx;height:40rpx;vertical-align:middle;}
+.recordlist{width:100%;display: flex;flex-direction: column;}
+.recordevery{width:100%;display: flex;flex-direction: row;padding:10rpx 20rpx;box-sizing:border-box}
+.recordevery image{width:60rpx;height:60rpx;border-radius:50%;padding:27rpx 0rpx;}
+.recordintr{flex:1;display:flex;flex-direction: column;padding:10px;}
+.recordintr text{color:#8e8e93;font-size:28rpx;}
+.Fabulous{display: flex;flex-direction: row;line-height:154rpx;}
+.Fabulous image{width:26rpx;height:26rpx;padding-top:64rpx;}
+.Fabulous text{font-size:28rpx;color:#8e8e93;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

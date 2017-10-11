@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "分享文章",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

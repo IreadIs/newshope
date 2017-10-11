@@ -1,0 +1,33 @@
+<!--pages/earlywarn/early warn.wxml-->
+<view class="container">
+  <view class="bannerbg">
+    <view class="bgc"></view>
+    <view class="goodfriend">
+      <text>开发新客户</text>
+      <text>-按成交概率</text>
+    </view>
+  </view>
+  <view class="users">
+    <text class="left">用户(共{{amount}}人)</text>
+    <text class="right">成交概率</text>
+  </view>
+  <view class="containers" style="width:100%;">
+    <block wx:if="{{list.length==0}}"><text style="font-size:28rpx;padding-left:20rpx;">暂无数据</text></block>
+    <block wx:else>
+      <block wx:for-item="listitem" wx:for="{{list}}">
+        <view class="item">
+            <image class="img" src="{{listitem.avatar}}"></image>
+            <view class="text">
+              <text class="title">{{listitem.title}}</text>
+              <text class="description">距离掉入客户池还剩:<text style="color:red;">{{listitem.timeleft}}</text>天</text>
+            </view>
+            <progress percent="{{listitem.percent}}" stroke-width="20" show-info activeColor="#43d2ea" />
+            <view class="golds">
+              <text class="jinzi">联系</text>
+            </view>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>
+

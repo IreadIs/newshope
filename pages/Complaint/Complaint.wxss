@@ -1,0 +1,48 @@
+/* pages/Complaint/Complaint.wxss */
+@import "../qrcode/qrcode.wxss";
+@import "../Invitation/Invitation.wxss";
+.suggest{width:100%;display: flex;flex-direction: column;padding:20rpx 40rpx;box-sizing:border-box;}
+textarea{border:2rpx solid #ccc;margin:0 auto;margin-bottom:20rpx;padding:10rpx 20rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

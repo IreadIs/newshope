@@ -1,0 +1,46 @@
+/* pages/service/service.wxss */
+.container1{width:100%;}
+.container1 .newuser{width:50%;float:left;height:402rpx;background:#ebebeb;display: flex;flex-direction: column;text-align:center;}
+.container1 .newuser image{width: 140rpx;height:130rpx;margin:60rpx auto 80rpx auto}
+.container1 .newuser text{font-size:28rpx;color:#333;}
+.container1 .newuser1{background:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!--pages/Addspec/Addspec.wxml-->
+<view class="container">
+    <view class="headpro">
+        <image src="{{list.photo}}"></image>
+        <view class="protext">{{list.title}}</view>
+    </view>
+    <view class="bgc"></view>
+    <view class="prolist">
+        <view class="guige">
+            <text class="gg">规格：</text>
+            <input  data-options="{{list.options}}" bindinput="guige" class="proinput" type="text"/>
+        </view>
+        <view class="guige">
+            <text class="gg">货号：</text>
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/star.png"></image>
+            <input  data-itemno="{{list.itemno}}" bindinput="huohao" class="proinput" type="text"/>
+        </view>
+        <view class="guige">
+            <text class="gg">原价：</text>
+            <input  data-price="{{list.price}}" bindinput="yuanjia" class="proinput" type="text"/>
+        </view>
+        <view class="guige">
+            <text class="gg">现价：</text>
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/star.png"></image>
+            <input  data-special="{{list.special}}" bindinput="xianjia" class="proinput" type="text"/>
+        </view>
+        <view class="guige">
+            <text class="gg">分销佣金：</text>
+            <input  data-commission="{{list.commission}}" bindinput="yongjin" class="proinput" type="text"/>
+        </view>
+        <view class="guige">
+            <text class="gg">允许使用最大金币数：</text>
+            <input  data-allowcredit="{{list.allowcredit}}" bindinput="jinbi" class="proinput" type="text"/>
+        </view>
+        <view class="guige">
+            <text class="gg">库存：</text>
+            <image src="https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/star.png"></image>
+            <input data-storage="{{list.storage}}" bindinput="kucun" class="proinput" type="text"/>
+        </view>
+        <view class="guige">
+            <text class="gg">已售：</text>
+            <input  data-sale="{{list.saled}}" bindinput="yishou" class="proinput" type="text"/>
+        </view>
+    </view>
+    <view class="cancle">
+        <navigator url="../adminmanger/adminmanger" hover-class="none" class="quxiao">
+             <text>取消</text>
+        </navigator>
+        <text class="queren" bindtap="suerpro">确认</text>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "White",
+  "navigationBarTitleText": "新增工作详情",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,60 @@
+/* pages/ranking/ranking.wxss */
+.bannerbg{position:relative;width:100%;height:176rpx;background-image: url(https://qiyeplus.qiyeplus.com/data/upload/forsmall/images/bannerbg1.png);background-repeat: no-repeat;background-position: center center;}
+.bgc{position:absolute;width:100%;height:88rpx;line-height:88rpx;background:#000;opacity:0.1;}
+.goodfriend{width:100%;display: flex;flex-direction: row;font-size:28rpx;color:#fff;height:88rpx;line-height:88rpx;padding:0rpx 40rpx;box-sizing:border-box;}
+.serch{width:100%;padding:40rpx 40rpx;box-sizing: border-box;}
+.serchborder{width:100%;border:1px solid #ccc;border-radius:10rpx;font-size:28rpx;line-height:56rpx;height:56rpx;display: flex;flex-direction: row;}
+.serchborder image{width:50rpx;height:50rpx;}
+.serchborder input{flex:1;height:56rpx;line-height:56rpx;padding:0rpx 10rpx;}
+.listrank{width:100%;display:flex;flex-direction:column;padding:0rpx 40rpx;box-sizing:border-box;}
+.rankmenu{width:100%;display:flex;flex-direction:row;font-size:24rpx;font-weight:bold;border-bottom:1px solid #ccc;padding:20rpx 0rpx;}
+.rankmenu text{width:25%;text-align:center;}
+.rankmenus text{width:16.66%;text-align:center;padding-right:27rpx;}
+.ranklist{width:100%;display: flex;flex-direction: column;}
+.rankevery{width:100%;display: flex;flex-direction: row;font-size:24rpx;color:#000;border-bottom:1px solid #ccc;padding:20rpx 0rpx;}
+.rankevery text{width:25%;text-align:center;}
+.goodfirends{flex-direction: column;}
+.default{padding:20rpx 0;display:flex;flex-direction: column;text-align:center;flex:1;border-right:1px solid #007aff;color:orange;font-weight:bold;font-size:28rpx;line-height:65rpx;}
+.default:nth-child(3){border-right:none;}
+.red:nth-child(3){border-right:none;}
+.red{padding:20rpx 0;display:flex;flex-direction: column;text-align:center;color:#000;flex:1;border-right:1px solid 007aff;font-weight:bold;font-size:28rpx;line-height:65rpx;height:46rpx;background:#fff;}
+.show{display:block;text-align:center;padding:40rpx 20rpx 100rpx 20rpx;box-sizing:border-box;}
+.hidden{display:none;text-align:center;line-height:200px;}
+.tabranking{width:100%;display: flex;flex-direction: row;}
+.rankmenuser text{width:33.33%;}
+.rankeverys text{width:33.33%;}
+.userrankimg{line-height:20px;width:33.33%;display: flex;flex-direction: column;}
+.userrankimg image{width:60rpx;height:60rpx;margin:15px 37px 0.5px 37px;border-radius:50%;}
+.userrankimg text{width:200rpx;}
+.rankeverys{line-height:136rpx;padding:20rpx 0rpx;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

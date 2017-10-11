@@ -1,0 +1,28 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="wxphoto">
+    <image src="{{userInfo.avatar}}"></image>
+    <text bindtap="bindwxphoto">同步微信头像</text>
+  </view>
+  <form style="width:100%;">
+    <view class="xname">
+    姓名<input type="text" name="xm" value="{{position}}" bindblur="Xname"/>
+    </view>
+    <view class="xname">
+    昵称<input type="text" name="xm" value="{{nickname}}" bindblur="Ncheng"/>
+    </view>
+    <view class="xname">
+      性别
+      <picker bindchange="xuanzexingbie" value="{{index_xingbie}}" range="{{arrayxingbie}}">
+        <view class="inputXiugai">{{arrayxingbie[index_xingbie]}}</view>
+      </picker>
+    </view>
+    <view class="xname">
+    公司名称<input type="text" name="xm" value="{{company}}" bindblur="company"/>
+    </view>
+    <view class="xname">
+    手机号<input type="text" name="xm" value="{{mobile}}" bindblur="mobile" bindconfirm="mobilephoto"/>
+    </view>
+     <button class="btnXiugai" formType="submit" bindtap="edits">确认修改</button>
+  </form>
+</view>

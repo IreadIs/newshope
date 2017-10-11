@@ -1,0 +1,4 @@
+/* pages/cuxiao/cuxiao.wxss */
+@import "../qrcode/qrcode.wxss";
+@import "../Turnoverrate/Turnoverrate.wxss";
+@import "../Pusheffect/Pusheffect.wxss";

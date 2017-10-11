@@ -1,0 +1,29 @@
+<!--pages/analysis/analysis.wxml-->
+<view class="container">
+  <view class="headeruser">
+    <image src="{{avatar}}" class="headerimg"></image>
+    <view class="useractive">
+      <text style="font-size:32rpx;color:#000;">{{linkname}}</text>
+      <text style="font-size:24rpx;color:#6d6d72">成交概率:100%</text>
+    </view>
+    <view class="contact">
+      <text class="lianxiren">联系</text>
+    </view>
+  </view>
+  <view class="bgc"></view>
+  <view class="analysis">
+    <view class="analtitle">
+      <text style="font-size:32rpx;">{{linkname}}行为分析</text>
+    </view>
+    <block wx:for-item="anaysisg" wx:for="{{analysis}}">
+        <view class="analysisilist">
+          <image src="{{anaysisg.avatar}}" class="anaimg"></image>
+          <view class="analname">
+            <text class="aname">{{anaysisg.linkman}}</text>
+            <text class="intor">{{anaysisg.title}}</text>
+            <text class="times">{{anaysisg.dateline}}</text>
+          </view>
+        </view>
+    </block>
+  </view>
+</view>
