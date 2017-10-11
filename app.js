@@ -16,7 +16,7 @@ App({
         if (code) {
           //读取会员信息
           wx.request({
-            url: "https://qiyeplus.qiyeplus.com/mobile/ajax/small.php?action=appletauth",
+            url: "https"+asp,
             data: {
               code: code,
             },
@@ -32,13 +32,13 @@ App({
                   iv = res.iv;
                   appUserinfo = res.userInfo
                   wx.request({
-                    url: "https://qiyeplus.qiyeplus.com/mobile/ajax/small.php?comefrom=small&module=user&action=decryptuserinfo",
+                    url: '*****',
                     data: {
                       openid: openid,
                       unionid: encryptedData,
                       sessionkey: sessionkey,
                       iv: iv,
-                      appid: 'wx758e9825590dc405'
+                      appid: '******************'
                     },
                     dataType: "json",
                     success: function (ret) {
